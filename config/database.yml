@@ -6,21 +6,21 @@
 #
 
 default: &default
-	adapter: mysql2
-	encoding: utf8
-	pool: 5
-	username: root
-	password:
-	socket: /tmp/mysql.sock
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
 
 development:
-	<<: *default
-	database: cookbook-app_development
+  <<: *default
+  database: cookbook-app_development
 
 
 test:
-	<<: *default
-	database: cookbook-app_test
+  <<: *default
+  database: cookbook-app_test
 
 
 #
