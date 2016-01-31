@@ -1,0 +1,31 @@
+<h1>Let's create a new recipe:</h1>
+
+<%= form_tag "/recipes/#{@recipe.id}", method: :patch do %>
+	<div>
+		<%= label_tag :title %>
+		<%= text_field_tag :title, @employee.first_name %>
+	</div>
+
+	<div>
+		<%= label_tag :chef %>
+		<%= text_field_tag :chef, @employee.last_name %>
+	</div>
+
+	<div>
+		<%= label_tag :ingredients %>
+		<%= text_field_tag :ingredients, @employee.email %>
+	</div>
+
+	<div>
+		<%= label_tag :directions %>
+		<%= text_field_tag :directions, @employee.job_title %>
+	</div>
+
+	<div>
+		<%= label_tag :image %>
+		<%= text_field_tag :image, @employee.salary %>
+	</div>
+
+	<%=submit_tag "Update" %>
+
+<% end %>

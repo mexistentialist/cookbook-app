@@ -1,0 +1,19 @@
+<h1>Cookbook</h1>
+
+	
+	<h2><%= @recipe.title %></h2>
+	<h2>By: <%= @recipe.chef %></h2>
+	<h3>Prep Time: <%= @recipe.friendly_preptime %></h3>
+	<h3><%= @recipe.friendly_updated_at %></h3> 
+	<ul>
+	<% @ingredient_list.each do |ingredient| %>
+		<li><%= ingredient %></li>
+		<% end %>
+	</ul>
+	<h3>Directions:</h3>
+	<% @directions_list.each do |step| %>
+		<ol>
+			<li><% step %></li>
+		</ol>
+	<% end %>
+	<%= @recipe.image %>
