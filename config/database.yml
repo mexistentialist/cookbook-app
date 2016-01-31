@@ -23,7 +23,7 @@ test:
 
 #
 production:
-	database: cookbook-app_production
-	adapter: postgrespl
-		encoding:unicode
-		pool:5
+    database: cookbook-app_production
+    adapter: postgrespl
+        encoding:unicode
+        pool:5
